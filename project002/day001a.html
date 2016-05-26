@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>526 RoundCube</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/roundcubemail_installer_styles.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+
+    </head>
+    <body>
+
+        <h1>  [<a href="index.html">Home</a>]->  <u>Evaluate RoundCube</u></h1>
+        <h2> Mark,  05/26 08:00  </h2>
+        <h3>Download installer</h3>
+        <div>
+            https://roundcube.net/download/ <br>
+            1.2.0 - Complete 1.2.0
+        </div>
+
+
+        <h3>Setup working dir </h3>
+        <div>
+            D:\xampp\htdocs\526\roundcubemail<br>
+            以簡易月日命名資料夾
+
+        </div>
+
+        <h3>Visit localhost</h3>
+        <div> http://localhost:8080/526/roundcubemail/</div>
+        <div>直觀查看上述網址，預期報錯，信息為 config.inc.php was not found.</div>
+        <h3>Start to install,</h3>
+        <div>
+            http://localhost:8080/526/roundcubemail/installer/<br>
+            得到系統檢查的信息<br>
+            <img src="img/1.JPG" alt="1.JPG" width="480">
+            <br><br>在本機目前XAMPP的環境，有幾項要先處理<br>
+            <img src="img/2.JPG" alt="2.JPG" width="480">
+
+
+        </div>
+        <h3>處理 Intl</h3>
+        <div>
+            目前情況是 Intl:&nbsp; <span class="na">NOT AVAILABLE</span><br>
+            參考 http://www.php.net/manual/en/book.intl.php<br>
+            <img src="img/4.JPG" alt="4.JPG"  width="360">
+            <br><br>找到關於 XAMPP 的做法 <br>
+            <img src="img/5.JPG" alt="5.JPG"  width="480">
+            <br><br>先找到 php.ini檔案 <br>
+            <img src="img/8.JPG" alt="8.JPG"  width="480">
+            <br><br>找到該行去掉註釋 <br>
+            <img src="img/9.JPG" alt="9.JPG"  width="360">
+            <br><br>重啟 Apache <br>
+            <img src="img/6.JPG" alt="6.JPG"  width="480">
+            <br><br>再訪問確認問題解決 <br>
+            <img src="img/10.JPG" alt="10.JPG"  width="360">
+
+        </div>
+          <h3>處理 LDAP</h3>
+        <div>
+            目前情況是 LDAP:&nbsp; <span class="na">NOT AVAILABLE</span><br>
+            參考 http://www.php.net/manual/en/book.ldap.php<br>
+            <img src="img/11.JPG" alt="11.JPG"  width="360">
+           
+            <br><br>先找到 php.ini檔案 <br>
+            找到該行去掉註釋 <br>
+            <img src="img/12.JPG" alt="12.JPG"  width="360">
+            <br><br>重啟 Apache <br>
+           再訪問確認問題解決 <br>
+            <img src="img/13.JPG" alt="13.JPG"  width="480">
+
+        </div>
+                 <h3>下一步 Create config</h3>
+        <div>
+            數據庫有MySQL，因此可以繼續<br>
+            <img src="img/14.JPG" alt="14.JPG"  width="360">
+           
+           
+
+        </div>
+
+    </body>
+</html>
